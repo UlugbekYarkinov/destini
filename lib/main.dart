@@ -50,6 +50,10 @@ class _StoryPageState extends State<StoryPage> {
                     //Choice 1 made by user.
                     //TODO: Step 18 - Call the nextStory() method from storyBrain and pass the number 1 as the choice made by the user.
                   },
+                  style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(Colors.lightBlueAccent),
+                    foregroundColor: MaterialStatePropertyAll(Colors.white),
+                  ),
                   child: Text(
                     //TODO: Step 13 - Use the storyBrain to get the text for choice 1.
                     'Choice 1',
@@ -71,6 +75,10 @@ class _StoryPageState extends State<StoryPage> {
                     //Choice 2 made by user.
                     //TODO: Step 19 - Call the nextStory() method from storyBrain and pass the number 2 as the choice made by the user.
                   },
+                  style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll(Colors.green),
+                    foregroundColor: MaterialStatePropertyAll(Colors.white),
+                  ),
                   child: Text(
                     //TODO: Step 14 - Use the storyBrain to get the text for choice 2.
                     'Choice 2',
