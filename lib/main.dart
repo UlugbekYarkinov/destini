@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'story_brain.dart';
 
-StoryBrain question = StoryBrain();
-
-//TODO: Step 15 - Run the app and see if you can see the screen update with the first story. Delete this TODO if it looks as you expected.
+StoryBrain storyBrain = StoryBrain();
 
 void main() => runApp(Destini());
 
@@ -28,8 +26,8 @@ class _StoryPageState extends State<StoryPage> {
         decoration: const BoxDecoration(
           image: DecorationImage(image: AssetImage('images/background.png')),
         ),
-        padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
-        constraints: BoxConstraints.expand(),
+        padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
+        constraints: const BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -38,8 +36,8 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 12,
                 child: Center(
                   child: Text(
-                    question.getStory(),
-                    style: TextStyle(
+                    storyBrain.getStory(),
+                    style: const TextStyle(
                       fontSize: 25.0,
                     ),
                   ),
@@ -57,15 +55,14 @@ class _StoryPageState extends State<StoryPage> {
                     foregroundColor: MaterialStatePropertyAll(Colors.white),
                   ),
                   child: Text(
-                    //TODO: Step 13 - Use the storyBrain to get the text for choice 1.
-                    'Choice 1',
-                    style: TextStyle(
+                    storyBrain.getChoice1(),
+                    style: const TextStyle(
                       fontSize: 20.0,
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Expanded(
@@ -82,9 +79,8 @@ class _StoryPageState extends State<StoryPage> {
                     foregroundColor: MaterialStatePropertyAll(Colors.white),
                   ),
                   child: Text(
-                    //TODO: Step 14 - Use the storyBrain to get the text for choice 2.
-                    'Choice 2',
-                    style: TextStyle(
+                    storyBrain.getChoice2(),
+                    style: const TextStyle(
                       fontSize: 20.0,
                     ),
                   ),
