@@ -29,7 +29,7 @@ class StoryBrain {
         storyTitle:
         'You bond with the murderer while crooning verses of "Can you feel the love tonight". He drops you off at the next town. Before you go he asks you if you know any good places to dump bodies. You reply: "Try the pier".',
         choice1: 'Restart',
-        choice2: '')
+        choice2: ''),
   ];
 
   String getStory() => _storyData[0].getStoryTitle();
