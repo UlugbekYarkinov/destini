@@ -47,8 +47,7 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 2,
                 child: TextButton(
                   onPressed: () {
-                    //Choice 1 made by user.
-                    //TODO: Step 18 - Call the nextStory() method from storyBrain and pass the number 1 as the choice made by the user.
+                    storyBrain.nextStory(1);
                   },
                   style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(Colors.lightBlueAccent),
@@ -71,8 +70,7 @@ class _StoryPageState extends State<StoryPage> {
                 //TODO: Step 28 - Set the "visible" property of the Visibility Widget to equal the output from the buttonShouldBeVisible() method in the storyBrain.
                 child: TextButton(
                   onPressed: () {
-                    //Choice 2 made by user.
-                    //TODO: Step 19 - Call the nextStory() method from storyBrain and pass the number 2 as the choice made by the user.
+                    storyBrain.nextStory(2);
                   },
                   style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(Colors.green),
